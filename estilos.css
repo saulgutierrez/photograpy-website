@@ -1,0 +1,570 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+/*Variables CSS */
+:root {
+    --font: 'Cormorant', serif;
+    --light-brown: #b58a7c;
+    --dark-brown: #402e32;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background: var(--dark-brown);
+    overflow-x: hidden;
+}
+
+/* Inicio */
+.inicio {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: 0.4s;
+}
+
+
+.inicio header .nav {
+    display: flex;
+    list-style: none;
+}
+
+.inicio header .nav li {
+    padding: 20px;
+}
+
+.inicio header .logo,
+.inicio header .nav li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.inicio header .nav li a:hover {
+    color: var(--dark-brown);
+}
+
+.inicio header .logo {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.inicio video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+    z-index: -1;
+}
+
+.inicio .contenido {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.inicio .contenido h2 {
+    font-size: 5em;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.inicio .contenido h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 270px;
+    width: 150px;
+    height: 1px;
+    background: var(--white);
+}
+
+.inicio .contenido h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 270px;
+    width: 150px;
+    height: 1px;
+    background: var(--white);
+}
+
+.inicio .contenido p {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+/* Sobre Mi */
+.sobre-mi {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;   
+}
+
+.sobre-mi::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+    background: linear-gradient(to top, var(--dark-brown), transparent);
+}
+
+.sobre-mi::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    background: linear-gradient(to bottom, var(--dark-brown), transparent);
+}
+
+.sobre-mi .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.sobre-mi .contenido .texto {
+    position: relative;
+    width: 450px;
+}
+
+.sobre-mi .contenido .texto h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--light-brown);
+}
+
+.sobre-mi .contenido .texto p {
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+.sobre-mi .contenido .imagen {
+    position: relative;
+    width: 350px;
+    height: 450px;
+}
+
+.sobre-mi .contenido .imagen::before {
+    content: '';
+    position: absolute;
+    top: -8%;
+    right: -10%;
+    width: 350px;
+    height: 450px;
+    border: 1px solid var(--light-brown);
+}
+
+.sobre-mi .contenido .imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Galeria */
+
+.galeria {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.galeria .imagenes {
+    position: relative;
+    width: 100%;
+}
+
+.galeria .imagenes .imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+
+}
+
+/* Contacto */
+.contacto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.contacto::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    background: linear-gradient(to top, var(--dark-brown), transparent);
+}
+
+.contacto h2 {
+    position: relative;
+    color: var(--light-brown);
+    font-size: 4em;
+    margin-bottom: 40px;
+}
+
+.contacto h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 370px;
+    width: 150px;
+    height: 1px;
+    background: var(--light-brown);
+}
+
+.contacto h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 370px;
+    width: 150px;
+    height: 1px;
+    background: var(--light-brown);
+}
+
+.contacto form {
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto form .inputBox input,
+.contacto form .inputBox textarea {
+    border: 1px solid var(--light-brown);
+    background: var(--dark-brown);
+    color: var(--white);
+    outline: none;
+    width: 400px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    resize: none;
+}
+
+.contacto form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    background: var(--light-brown);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contacto form input[type="submit"]:hover {
+    background: var(--white);
+}
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--light-brown);
+    opacity: 0.3;
+}
+
+footer .rrss a {
+    padding: 20px;
+    font-size: 1.5em;
+    color: var(--light-brown);
+    transition: 0.3s;
+}
+
+footer .rrss a:hover {
+    color: var(--white);
+}
+
+footer .copyright p {
+    color: var(--light-brown);
+    font-size: 1.2em;
+
+}
+
+/* Navbar (Active) */
+.inicio header.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    padding: 60px 100px;
+    backdrop-filter: blur(24px);
+    z-index: -1;
+}
+
+/* Ocultar Boton Menu */
+.menuToggle {
+    display: none;
+}
+
+/* Breakpoints */
+
+/* -- Pantallas Largas -- */
+@media only screen and (max-width: 1200px) {
+    .inicio .contenido h2::before {
+        left: 200px;
+    }
+
+    .inicio .contenido h2::after {
+        right: 200px;
+    }
+}
+
+/* -- Laptops -- */
+@media only screen and (max-width: 992px) {
+    .inicio .contenido h2::before {
+        width: 100px;
+        left: 150px;
+    }
+
+    .inicio .contenido h2::after {
+        width: 100px;
+        right: 150px;
+    }
+}
+
+/* -- Tablets -- */
+@media only screen and (max-width: 768px) {
+    .inicio header {
+        padding: 30px 60px;
+    }
+
+    .inicio header .nav {
+        display: none;
+    }
+
+    .inicio header .menu1.active {
+        width: 100%;
+        position: fixed;
+        top: 90px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .inicio header .menu2.active {
+        width: 100%;
+        position: fixed;
+        top: 217px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .menuToggle {
+        display: initial;
+        position: relative;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        background: url('menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .menuToggle.active {
+        background: url('close.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .inicio header.active::before {
+        padding: 45px;
+    }
+
+    .inicio header .nav .logo {
+        position: absolute;
+    }
+
+    .inicio .contenido h2 {
+        font-size: 3.5em;
+    }
+
+    .inicio .contenido h2::before {
+        top: 49%;
+        width: 100px;
+        left: 100px;
+    }
+
+    .inicio .contenido h2::after {
+        top: 49%;
+        width: 100px;
+        right: 100px;
+    }
+
+    .inicio .contenido p {
+        font-size: 1em;
+    }
+
+    .sobre-mi .contenido {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sobre-mi .contenido .texto h2 {
+        font-size: 2.5em;
+    }
+
+    .sobre-mi .contenido .texto p {
+        font-size: 1.2em;
+    }
+
+    .sobre-mi .contenido .imagen,
+    .sobre-mi .contenido .imagen::before {
+        width: 250px;
+        height: 350px;
+    }
+
+    .contacto h2 {
+        font-size: 2.5em;
+    }
+
+    .contacto h2::before {
+        left: 250px;
+        width: 150px;
+    }
+
+    .contacto h2::after {
+        right: 250px;
+        width: 150px;
+    }
+}
+/* -- Celulares -- */
+@media only screen and (max-width: 400px) {
+    .inicio header {
+        padding: 20px 30px;
+    }
+
+    .inicio .contenido h2 {
+        font-size: 2.5em;
+    }
+
+    .inicio .contenido h2::before {
+        top: 48%;
+        width: 50px;
+        left: 30px;
+    }
+
+    .inicio .contenido h2::after {
+        top: 48%;
+        width: 50px;
+        right: 30px;
+    }
+
+    .sobre-mi .contenido .texto {
+        width: 300px;
+    }
+
+    .sobre-mi .contenido .imagen,
+    .sobre-mi .contenido .imagen::before {
+        width: 220px;
+        height: 320px;
+    }
+
+    .contacto h2 {
+        font-size: 2em;
+    }
+
+    .contacto h2::before {
+        left: 200px;
+        width: 50px;
+    }
+
+    .contacto h2::after {
+        right: 200px;
+        width: 50px;
+    }
+
+    .contacto form .inputBox input,
+    .contacto form .inputBox textarea {
+        width: 300px;
+    }
+
+    footer .copyright {
+        text-align: center;
+        width: 350px;
+    }
+}

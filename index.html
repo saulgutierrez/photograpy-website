@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Estilos CSS Libreria Swipper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Photograpy Website</title>
+</head>
+<body>
+    <!-- Seccion Inicio -->
+    <section class="inicio">
+        <header>
+            <ul class="nav menu1">
+                <li><a href="#" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="#sobre-mi" onclick="toggleMenu()">Sobre mi</a></li>
+            </ul>
+            <a href="#" class="logo">Jane Doe</a>
+            <ul class="nav menu2">
+                <li><a href="#galeria" onclick="toggleMenu()">Galeria</a></li>
+                <li><a href="#contacto" onclick="toggleMenu()">Contáctame</a></li>
+            </ul>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
+        </header>
+        <video src="video.mp4" autoplay loop muted></video>
+        <div class="contenido">
+            <h2>Soy Jane Doe</h2>
+            <p>Fotógrafa y amante de la naturaleza</p>
+        </div>
+    </section>
+    <!-- Fin Seccion Inicio -->
+
+    <!-- Seccion Sobre Mi -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="contenido">
+            <div class="texto">
+                <h2>Mi pasión es capturar la belleza de la naturaleza a través de mi lente</h2>
+                <p>Soy una creativa fotografa profesional. Me encanta recorrer el mundo en busca de hermosos paisajes y maravillas naturales, las cuales adoro preservar para siempre en una foto.</p>
+            </div>
+            <div class="imagen">
+                <img src="img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Fin Seccion Sobre Mi -->
+
+    <!-- Seccion Galeria -->
+    <section class="galeria swiper" id="galeria">
+        <div class="imagenes swiper-wrapper">
+            <div class="imagen swiper-slide">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="imagen swiper-slide">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="imagen swiper-slide">
+                <img src="3.jpg" alt="">
+            </div>
+            <div class="imagen swiper-slide">
+                <img src="4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Fin Seccion Galeria -->
+
+    <!-- Seccion Contacto -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctame</h2>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Tu nombre..." name="" id="">
+            </div>
+            <div class="inputBox">
+                <input type="email" placeholder="Tu correo electrónico..." name="" id="">
+            </div>
+            <div class="inputBox">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Tu mensaje"></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+    <!-- Fin Seccion Contacto -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="rrss">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-behance"></ion-icon></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Saúl Gutiérrez - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Scripts Libreria Ionicons (Iconos) -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Script Libreria Swipper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Script index.js -->
+    <script src="index.js"></script>
+</body>
+</html>
