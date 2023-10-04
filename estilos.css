@@ -538,6 +538,16 @@ footer .copyright p {
         width: 300px;
     }
 
+    .sobre-mi .contenido .texto h2 {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .sobre-mi .contenido .texto p {
+        width: 90%;
+        max-width: 300px;
+    }
+
     .sobre-mi .contenido .imagen,
     .sobre-mi .contenido .imagen::before {
         width: 220px;
@@ -549,18 +559,23 @@ footer .copyright p {
     }
 
     .contacto h2::before {
-        left: 200px;
+        left: 170px;
         width: 50px;
     }
 
     .contacto h2::after {
-        right: 200px;
+        right: 170px;
         width: 50px;
+    }
+
+    .contacto form {
+        max-width: 250px;
+        width: 70%;
     }
 
     .contacto form .inputBox input,
     .contacto form .inputBox textarea {
-        width: 300px;
+        width: 250px;
     }
 
     footer .copyright {
