@@ -535,11 +535,11 @@ footer .copyright p {
     }
 
     .sobre-mi .contenido .texto {
-        padding-top: 30px;
         width: 300px;
     }
 
     .sobre-mi .contenido .texto h2 {
+        padding-top: 200px;
         width: 90%;
         max-width: 300px;
     }
