@@ -552,7 +552,7 @@ footer .copyright p {
     .sobre-mi .contenido .imagen,
     .sobre-mi .contenido .imagen::before {
         width: 220px;
-        height: 320px;
+        height: 620px;
     }
 
     .contacto h2 {
