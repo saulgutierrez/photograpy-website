@@ -525,13 +525,13 @@ footer .copyright p {
     .inicio .contenido h2::before {
         top: 48%;
         width: 50px;
-        left: 30px;
+        left: 20px;
     }
 
     .inicio .contenido h2::after {
         top: 48%;
         width: 50px;
-        right: 30px;
+        right: 20px;
     }
 
     .sobre-mi {
