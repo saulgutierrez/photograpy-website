@@ -7,3 +7,5 @@ Technologies used: <br>
 <li> Swiper.js </li>
 <li> Ionic Icons </li>
 <li> Google Fonts </li>
+
+![image](https://github.com/saulgutierrez/photograpy-website/assets/62368834/d5adccf7-02c0-4e4e-b61d-e62f20c0135c)
